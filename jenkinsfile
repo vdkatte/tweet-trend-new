@@ -9,6 +9,12 @@ pipeline {
    }
 
     stages {
+        stage('Clone-code') {
+            steps {
+                echo 'Hello World'
+                
+            }
+        }
         stage("build"){
             steps {
                  echo "----------- build started ----------"
@@ -16,6 +22,5 @@ pipeline {
                  echo "----------- build complted ----------"
             }
     }
-
+ }
 }
-
